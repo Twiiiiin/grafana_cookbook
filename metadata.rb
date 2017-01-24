@@ -1,6 +1,6 @@
 name 'grafana'
-maintainer 'Jonathan Tron'
-maintainer_email 'jonathan@tron.name'
+maintainer 'Twin'
+maintainer_email 'twin.flavio@gmail.com'
 license 'Apache 2.0'
 description 'Installs/Configures grafana'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))

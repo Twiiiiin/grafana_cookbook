@@ -26,10 +26,13 @@ action :create do
   exists = false
 
   # Find wether user already exists
+ 
+if users_list.any?
   users_list.each do |user|
     exists = true if user['login'] == new_resource.user[:login]
     break if exists
   end
+end
 
   # If not found, let's create it and set its permissions
   unless exists
